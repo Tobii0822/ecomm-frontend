@@ -1,0 +1,39 @@
+/* Global styles (kept small — most styling comes from Vuetify) */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', 'Roboto', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+.section-title {
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.section-subtitle {
+  color: rgb(100, 116, 139);
+  margin: 4px 0 0;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Small typography helpers (independent of Vuetify's typography class names) */
+.text-small { font-size: 0.875rem; }
+.text-tiny { font-size: 0.75rem; }
+.text-muted { color: rgb(100, 116, 139); }
+.text-strong { font-weight: 700; }
+.price-text { font-weight: 800; color: rgb(var(--v-theme-primary)); }
+
+.max-w-page {
+  max-width: 1280px;
+}
